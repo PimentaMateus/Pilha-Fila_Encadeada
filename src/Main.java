@@ -1,4 +1,4 @@
-public class ListaEspera {
+public class Main {
     public static void main(String[] args) {
         ListaEncadeada list = new ListaEncadeada();
         System.out.println("**************Teste Lista Enc ********");
@@ -7,6 +7,7 @@ public class ListaEspera {
         list.insereOrdenado(21);
         list.insereOrdenado(15);
         list.insereDepois(list.getNode(21), 30);
+        list.removeUltimo();
         list.imprimir();
         Pilha p = new Pilha();
         System.out.println("**************Teste Pilha************");

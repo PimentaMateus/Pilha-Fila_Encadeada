@@ -82,12 +82,14 @@ public class ListaEncadeada{
     public Node removeUltimo() {
         Node aux = Lista;
         Node ref = aux;
+        if(!vazia()){
         while (aux.getProximo() != null) {
             ref = aux;
             aux = aux.getProximo();
         }
-        ref.setProximo(null);
-        return aux;
+        ref.setProximo(null);}
+            return aux;
+
     }
 
     public Node remove(Node node) {
